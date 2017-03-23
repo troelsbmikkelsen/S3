@@ -57,6 +57,12 @@
     <Compile Include="RouletteTests.cs" />
     <Compile Include="TerningTests.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spil\Spil.csproj">
+      <Project>{6010bcb2-6df3-4719-8d3e-29279c5f6d31}</Project>
+      <Name>Spil</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

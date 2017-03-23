@@ -54,6 +54,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S3Tests.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Opgave1\Opgave1.csproj">
+      <Project>{72dba97d-61ab-47f4-91a0-4ca3e7abb20d}</Project>
+      <Name>Opgave1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Opgave2\Opgave2.csproj">
+      <Project>{fbfa1632-04eb-451e-a7d8-2cb17d641205}</Project>
+      <Name>Opgave2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Opgave3\Opgave3.csproj">
+      <Project>{bc604fff-f486-4046-a763-98002884751a}</Project>
+      <Name>Opgave3</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
