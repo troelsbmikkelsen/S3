@@ -53,12 +53,6 @@
     <Compile Include="BibliotekTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Bibliotek\Bibliotek.csproj">
-      <Project>{392e579d-9ac0-49c0-9641-0017351c4011}</Project>
-      <Name>Bibliotek</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

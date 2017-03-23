@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D152290-F04B-47A5-B610-DDE49C675420}</ProjectGuid>
+    <ProjectGuid>{021C0678-36D0-45EA-A99B-910893412E73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ShoppingTests</RootNamespace>
-    <AssemblyName>ShoppingTests</AssemblyName>
+    <RootNamespace>SpilTests</RootNamespace>
+    <AssemblyName>SpilTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,15 +51,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CartTests.cs" />
-    <Compile Include="CustomerTests.cs" />
+    <Compile Include="FemFingretTests.cs" />
+    <Compile Include="MøntTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Shopping\Shopping.csproj">
-      <Project>{cb1e11e2-0bca-4c2f-a1d6-44f58bbbf105}</Project>
-      <Name>Shopping</Name>
-    </ProjectReference>
+    <Compile Include="RouletteTests.cs" />
+    <Compile Include="TerningTests.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

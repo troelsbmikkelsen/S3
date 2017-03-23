@@ -96,16 +96,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entities\Weather.Entities.csproj">
-      <Project>{22ea982e-0682-46f3-870f-667968954a7a}</Project>
-      <Name>Weather.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Weather.Services\Weather.Services.csproj">
-      <Project>{aedc6fa0-d901-4d5d-8deb-568572a425e3}</Project>
-      <Name>Weather.Services</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\bluesky.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
